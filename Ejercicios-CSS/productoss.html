@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>HELLO KITTY</title>
+        <style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header'
+    'menu main main main'
+    'menu footer footer footer';
+  gap: 10px;
+  background-color: #ffa6fb;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+<div class="grid-container">
+  <div class="item1">
+    HELLO KITTY
+    <nav>
+        <a href="https://www.sanrio.com/">SANRIO</a> /
+        <a href="https://www.sanrio.com/collections/bags-and-accessories">BAGS AND ACCESORIES</a>
+    </nav>
+  </div>
+  <div class="item2">
+    <form>
+    <!-- Sección búsqueda -->
+    <fieldset>
+      <legend>Búsqueda</legend>
+      <label for="buscar">Buscar:</label>
+      <input type="text" id="buscar" name="buscar">
+    </fieldset>
+
+    <!-- Sección precios -->
+    <fieldset>
+      <legend>Precios</legend>
+      <label for="minimo">Mínimo:</label>
+      <input type="number" id="minimo" name="minimo"><br><br>
+      <label for="maximo">Máximo:</label>
+      <input type="number" id="maximo" name="maximo">
+    </fieldset>
+
+    <!-- Sección tipo de productos -->
+    <fieldset>
+      <legend>Tipo de Productos</legend>
+      <label><input type="checkbox" name="productos" value="protectores"> Protectores</label><br>
+      <label><input type="checkbox" name="productos" value="entrenamiento"> Entrenamiento</label><br>
+      <label><input type="checkbox" name="productos" value="doboks"> Doboks</label>
+    </fieldset>
+  </form>
+  </div>
+  <div class="item3">
+    <img src="imagenes/OIP.jpg" alt="Hello Kitty">
+  </div>  
+  <div class="item4">
+    <img src="imagenes/OIP.jpg" alt="Hello Kitty">
+  </div>
+  <div class="item5">
+    <img src="imagenes/OIP.jpg" alt="Hello Kitty">
+  </div>
+</div>
+
+</body>
+</html>
